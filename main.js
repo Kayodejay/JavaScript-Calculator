@@ -1,9 +1,11 @@
 function calc() {
-    var a = parseInt(document.querySelector("#value1").value);
-    var b = parseInt(document.querySelector("#value2").value);
+    var a = Number(document.querySelector("#value1").value);
+    var b = Number(document.querySelector("#value2").value);
     var op = document.querySelector("#operator").value;
     var calculate;
 
+
+//conditional-statement for operations     
     if (op == "add") {
         calculate = a + b;
     } else if (op == "min") {
@@ -16,5 +18,5 @@ function calc() {
         calculate = a ** b;
     }
 
-document.querySelector("#result").innerHTML = calculate;
+alert('Answer is ' + calculate)
 }
