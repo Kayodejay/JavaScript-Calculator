@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            font-family: karla, montserrat;
+        }
+
+        #result{
+            border: 1px solid black;
+            width: fit-content;
+            padding: 1px;
+        }
+    </style>
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <form>
+        Value 1: <input type="text" id="value1"><br><br>
+        Value 2: <input type="text" id="value2"><br><br>
+        Operator:
+        <select id="operator">
+            <option value="add">Add</option>
+            <option value="min">Minus</option>
+            <option value="div">Divide</option>
+            <option value="mul">Multiple</option>
+            <option value="expo">Exponent</option>
+        </select><br><br>
+        <button type="button" onclick="calc()">Calculate</button>
+    </form><br>
+
+    <div id="result"></div>
+    
+</body>
+<script src="main.js"></script>
+</html>
